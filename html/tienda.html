@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_tienda.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!--NAV-->
+    <nav>
+        
+        <div class="login"> <!--Contiene el login/logout-->
+            <img class="loginImg" src="img/login1.png" alt="login">
+        </div>
+        
+        <div class="links"> <!--Contiene los links para anvegar en la page-->
+            <a class="linksStyle" href="#">Pricipal</a>
+            <a class="linksStyle" href="#">Catálogo</a>
+            <a class="linksStyle" href="#">Mis pedidos</a>
+            <a class="linksStyle" href="#">Contacto</a>
+        </div>
+        
+        <div class="bag"> <!--Contiene el button para ir a la bolsa-->
+            <img class="bagImg" src="img/BLACK_BAG.png" alt="bag">
+        </div>
+
+    </nav>
+    
+    <!--MAIN-->
+    <main>
+    <section class="tienda">
+        <article class="producto">
+            <img class="imgproducto" src="img/productos/dorito.png" alt="">
+
+            <h3>Doritos</h3>
+            <div class="especificacion">
+                <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
+                <h3>$<span class="num">5</span></h3>
+                <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img class="imgproducto" src="img/productos/doritodi.jpg" alt="">
+
+            <h3>Doritos</h3>
+            <div class="especificacion">
+                <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
+                <h3>$<span class="num">5</span></h3>
+                <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img class="imgproducto" src="img/productos/dinamita.jpg" alt="">
+
+            <h3>Doritos</h3>
+            <div class="especificacion">
+                <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
+                <h3>$<span class="num">5</span></h3>
+                <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img class="imgproducto" src="img/productos/pesi.webp" alt="">
+
+            <h3>Doritos</h3>
+            <div class="especificacion">
+                <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
+                <h3>$<span class="num">5</span></h3>
+                <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img class="imgproducto" src="img/productos/coca.webp" alt="">
+
+            <h3>Doritos</h3>
+            <div class="especificacion">
+                <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
+                <h3>$<span class="num">5</span></h3>
+                <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img class="imgproducto" src="img/productos/seven.webp" alt="">
+
+            <h3>Doritos</h3>
+            <div class="especificacion">
+                <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
+                <h3>$<span class="num">5</span></h3>
+                <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
+            </div>
+        </article>
+    </section>
+    </main>
+
+    <script src="js/Strips.js"></script>
+
+
+    <!--FOOTER-->
+    <footer>
+        <p class="footerText">©Super T Martínez - Abarrotes con sabor a barrio</p>
+    </footer>
+
+</body>
+</html>
