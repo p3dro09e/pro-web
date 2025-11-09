@@ -19,24 +19,27 @@ body
     margin: 0;
 }
 
-nav /*controla el estilo del nav*/
+.navMovile
+{  
+    display: none;
+}
+
+.navDesk /*controla el estilo del nav*/
 {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: 11.5vh;
-    /*background-color: rgb(226, 226, 226);*/
     background-color: #fff;
-    border-bottom: #a8a8a8 solid 1px;
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 8% 84% 8%;
+    grid-template-columns: 15% 70% 15%;
 }
 
 .login /*es el div para el login*/
 {
-    width: 60%; /*Listo*/
-    height: 80%; /*Listo*/
+    width: 60px; /*Listo*/
+    height: 60px; /*Listo*/
     border-radius: 60px;
     /*background-color: rgb(255, 255, 255);*/
     transition: all 0.3s ease;
@@ -65,8 +68,6 @@ nav /*controla el estilo del nav*/
 {
     width: 90%;
     height: 85%;
-    /*background-color: brown;*/
-    /*border: 1px solid black;*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -80,7 +81,7 @@ nav /*controla el estilo del nav*/
     color: black;
     font-weight: bold;
     height: 100%;
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,11 +99,12 @@ nav /*controla el estilo del nav*/
 
 .bag /*es el div donde está la bolsa*/
 {
-    width: 65%; /*Listo*/
-    height: 85%; /*Listo*/
+    width: 60px; /*Listo*/
+    height: 60px; /*Listo*/
     border-radius: 40px;
     transition: all 0.3s ease;
     display: grid;
+    align-items: center;
     justify-items: center;
 }
 
@@ -123,9 +125,9 @@ nav /*controla el estilo del nav*/
 main
 {
     margin: 0;
-    height: 78vh;
-    width: 100vw;
-    background-color: #fff;
+    width: 100%;
+    height: 78.5vh;
+    background-color: #ff6c6c;
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
@@ -135,30 +137,32 @@ main
     margin: 0%;
     width: 100%;
     height: 100%;
+    background-color: var(--redLateralMain2);
     /*background-color: cadetblue;*/
-    background-color: #fff;
+    /*background-color: #fff;*/
     display: grid;
     align-items: start;
-    justify-items: start;
+    justify-items: center;
 }
 
 .historia
 {
     margin: 0%;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    padding:  10px 10px;
     width: 90%;
-    height: 100%;
+    height: auto;
     color: #000;
     text-align: justify;
     font-weight: bold;
-    font-size: 1.02rem;
+    font-size: 1.04rem;
 }
 
 .prueba2
 {
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    /*background-color: #fff;*/
     /*background-color: rgb(65, 116, 117);*/
     display: grid;
     align-items: center;
@@ -199,41 +203,44 @@ main
 
 .prueba3
 {
+    margin: 0%;
     width: 100%;
     height: 100%;
+    background-color: var(--redLateralMain2);
     /*background-color: rgb(35, 67, 68);*/
     /*background-color: rgba(155, 24, 24, 0.9);*/
-    background-color: #fff;
+    /*background-color: #fff;*/
     display: grid;
-    align-items: center;
+    align-items: start;
     justify-items: center;
 }
 
 .atractivo
 {
-    background-color: var(--redLateralMain2);
-    width: 85%;
-    height: 70%;
-    border-radius: 15px;
+    margin: 0%;
+    width: 90%;
+    height: auto;
+    /*border-radius: 15px;*/
     padding: 10px 10px;
     color: #000;
     text-align: justify;
     font-weight: bold;
-    font-size: 1.02rem;
+    font-size: 1.04rem;
 }
 
 
 
 footer
 {
-    margin: 0%;
+    margin: 0;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
     display: grid;
     align-items: center;
     justify-items: center;
-    border-top: #a8a8a8 solid 1px;
+    /*border-bottom: #000 solid 0.1vh;*/
+    z-index: 1000;
 }
 
 .footerText
@@ -242,4 +249,301 @@ footer
     color: #000;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+@media(max-width: 1230px)
+{
+    .linksStyle
+    {
+        font-size: 1rem;
+    }
+
+    .linksStyle /*controla el estilo de los links*/
+    {
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    }
+
+    .linksStyle:hover /*hover para que los links cambien de background, tamaño y color*/
+    {
+    font-size: 1.1rem;
+    color: white;
+    background-color: var(--redColor);
+    transition: all 0.4s ease;
+    }
+
+    .login /*es el div para el login*/
+    {
+    width: 45px; /*Listo*/
+    height: 45px; /*Listo*/
+    border-radius: 60px;
+    /*background-color: rgb(255, 255, 255);*/
+    transition: all 0.3s ease;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.3s ease;
+    }
+
+    .login:hover /*hover para que cambie de color y aumente tamaño*/
+    {
+    transform: scale(1.05);
+    background-color: var(--redColor);
+    border: 1px solid var(--redColor);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    .bag /*es el div donde está la bolsa*/
+    {
+    width: 50px; /*Listo*/
+    height: 50px; /*Listo*/
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    display: grid;
+    justify-items: center;
+    }
+
+    .bagImg:hover /*hover para que la bolsa aumente de tamaño*/
+    {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    .categorias
+{
+    width: 95%;
+    height: 75%;
+    /*background-image: url("img/diseños/BOTANAS.png");*/
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: changeImage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.historia
+{
+    margin: 0%;
+    /*background-color: #fff;*/
+    padding:  10px 10px;
+    background-color: var(--redLateralMain2);
+    width: 95%;
+    height: 96%;
+    color: #000;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.atractivo
+{
+    font-size: 0.9rem;
+}
+
+}
+
+@media(max-width: 1020px)
+{
+    .linksStyle
+    {
+        font-size: 0.9rem;
+    }
+
+    .linksStyle:hover /*hover para que los links cambien de background, tamaño y color*/
+    {
+    font-size: 1rem;
+    color: white;
+    background-color: var(--redColor);
+    transition: all 0.4s ease;
+    }
+
+    .bag /*es el div donde está la bolsa*/
+    {
+    width: 47px; /*Listo*/
+    height: 47px; /*Listo*/
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    display: grid;
+    justify-items: center;
+    }
+
+    .bagImg:hover /*hover para que la bolsa aumente de tamaño*/
+    {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    .categorias
+{
+    width: 95%;
+    height: 65%;
+    /*background-image: url("img/diseños/BOTANAS.png");*/
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: changeImage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+}
+
+@media(max-width: 930px)
+{
+
+    .linksStyle /*controla el estilo de los links*/
+    {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    }
+
+    .linksStyle:hover
+    {
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+
+    .categorias
+    {
+        height: 55%;
+    }
+}
+
+@media(max-width: 800px)
+{
+
+    .navMovile
+    {  
+        width: 100%;
+        height: 11.5vh;
+        margin: 0%;
+        background-color: #fff;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 25% 50% 25%;
+    }
+
+        .login /*es el div para el login*/
+    {
+        width: 55px; /*Listo*/
+        height: 55px; /*Listo*/
+        border-radius: 60px;
+        /*background-color: rgb(255, 255, 255);*/
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .loginImg /*es la imagen del login*/
+    {
+        width: 90%;
+        height: 90%;
+    }
+
+    .linksContainer
+    {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .link /*No presenta problemas*/
+    {
+        margin: 0;
+        width: 50%;
+        height: 45%;
+        background-color: #ff6c6c;
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .link:hover
+    {
+        transform: scale(1.07);
+        border: 2px solid rgb(99, 6, 6);
+        transition: all 0.3s ease;
+    }
+
+    .linkBag
+    {
+        margin: 0;
+        width: 30%;
+        height: 65%;
+    }
+
+    .bagImgMovile
+    {
+        margin: 0 auto;
+        width: 55px;
+        height: 50px;
+        transition: all 0.3s ease;
+    }
+
+    .bagImgMovile:hover
+    {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+    .navDesk
+    {
+        display: none;
+    }
+
+    .categorias
+    {
+        height: 45%;
+    }
+
+    .footerText
+    {
+        font-size: 0.95rem;
+    }
+}
+
+@media(max-width: 670px)
+{
+    .categorias
+    {
+        height: 35%;
+    }
+
+    .historia
+    {
+        font-size: 0.8rem;
+    }
+
+    .atractivo
+    {
+        font-size: 0.8rem;
+    }
 }

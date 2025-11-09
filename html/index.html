@@ -6,12 +6,12 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    <!-- <script src='main.js'></script> -->
 </head>
 <body>
 
-    <!--NAV-->
-    <nav>
+    <!--NAV PARA PC-->
+    <nav class="navDesk">
         
         <div class="login"> <!--Contiene el login/logout-->
             <img class="loginImg" src="img/login1.png" alt="login">
@@ -20,7 +20,7 @@
         <div class="links"> <!--Contiene los links para anvegar en la page-->
             <a class="linksStyle" href="#">Pricipal</a>
             <a class="linksStyle" href="#">Catálogo</a>
-            <a class="linksStyle" href="#">Mis pedidos</a>
+            <a class="linksStyle" href="#">Mis Pedidos</a>
             <a class="linksStyle" href="#">Contacto</a>
         </div>
         
@@ -28,6 +28,30 @@
             <img class="bagImg" src="img/BLACK_BAG.png" alt="bag">
         </div>
 
+    </nav>
+
+    <!--NAV PARA MOVIL-->
+    <nav class="navMovile">
+
+        <!--Contiene el login/logout-->
+         <div class="login">
+            <img class="loginImg" src="img/login1.png" alt="login">
+        </div>
+
+        <!--Contiene el select de enlaces-->
+        <div class="linksContainer">
+            <select class="link">
+                <option><a href="#">Principal</a></option>
+                <option><a href="#">Catálogo</a></option>
+                <option><a href="#">Mis Pedidos</a></option>
+                <option><a href="#">Contacto</a></option>
+            </select>
+        </div>
+
+        <!--Contiene la bag-->
+        <!-- <div class="bagDiv"> -->
+            <a class="linkBag" href=""><img class="bagImgMovile" src="./img/BLACK_BAG.png"></a>
+        <!-- </div> -->
     </nav>
     
     <!--MAIN-->
@@ -59,9 +83,7 @@
             </p> -->
 
             <p class="atractivo">
-                En un mundo que corre cada vez más rápido, hay cosas que no cambian:
-                el olor a pan recién llegado, la confianza
-                de saber que aquí encuentras lo que realmente necesitas. Nuestra tienda
+                Nuestra tienda
                 de abarrotes no es un supermercado. Es ese rincón
                 de barrio donde te conocen por tu nombre, donde cada producto tiene historia,
                 y donde la sencillez sigue siendo un valor. <br> <br>
