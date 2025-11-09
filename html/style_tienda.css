@@ -1,151 +1,3 @@
-:root
-{
-    /*AQUÍ DECLARA LOS ESTILOS QUE SE VAN A ESTAR REPITIENDO COMO COLORES O
-    TIPOS Y TAMAÑOS DE LETRAS, ES MEJOR USAR VARIABLES Y ESTAR SEGUROS DE
-    USAR LO MISMO A ESTARLE ATINANDO XD*/
-
-    /*Todo lo que quieras poner con color rojo, usa esta variable*/
-    --redColor: rgb(253, 45, 45);
-
-    /*Este color lo puse para las barras laterales del main, es un rojo menos brillante, jode menos la  vista xd*/
-    --redLateralMain: rgb(155, 24, 24);
-
-     /*Este color lo puse para las barras laterales del main, es un rojo menos brillante, jode menos la  vista xd*/
-    --redLateralMain2: rgb(207, 27, 27);
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-body
-{
-    padding: 0;
-    margin: 0;
-}
-
-nav /*controla el estilo del nav*/
-{
-    margin: 0;
-    width: 100vw;
-    height: 11.5vh;
-    /*background-color: rgb(226, 226, 226);*/
-    background-color: #fff;
-    border-bottom: #a8a8a8 solid 1px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 8% 84% 8%;
-}
-
-.login /*es el div para el login*/
-{
-    width: 60%; /*Listo*/
-    height: 80%; /*Listo*/
-    border-radius: 60px;
-    /*background-color: rgb(255, 255, 255);*/
-    transition: all 0.3s ease;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    transition: all 0.3s ease;
-}
-
-.loginImg /*es la imagen del login*/
-{
-    width: 90%;
-    height: 90%;
-}
-
-.login:hover /*hover para que cambie de color y aumente tamaño*/
-{
-    transform: scale(1.05);
-    background-color: var(--redColor);
-    border: 1px solid var(--redColor);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.links /*estilo del div en donde están los links*/
-{
-    width: 90%;
-    height: 85%;
-    /*background-color: brown;*/
-    /*border: 1px solid black;*/
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.linksStyle /*controla el estilo de los links*/
-{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-    font-weight: bold;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-    
-}
-
-.linksStyle:hover /*hover para que los links cambien de background, tamaño y color*/
-{
-    font-size: 1.3rem;
-    color: white;
-    background-color: var(--redColor);
-    transition: all 0.4s ease;
-}
-
-.bag /*es el div donde está la bolsa*/
-{
-    width: 65%; /*Listo*/
-    height: 85%; /*Listo*/
-    border-radius: 40px;
-    transition: all 0.3s ease;
-    display: grid;
-    justify-items: center;
-}
-
-.bagImg /*es la imagen de la bolsa*/
-{
-    width: 75%;
-    height: 85%;
-    transition: all 0.3s ease;
-}
-
-.bagImg:hover /*hover para que la bolsa aumente de tamaño*/
-{
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-
-footer
-{
-    margin: 0%;
-    height: 10vh;
-    width: 100vw;
-    background-color: #fff;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    border-top: #a8a8a8 solid 1px;
-}
-
-.footerText
-{
-    margin: 0;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-
 
 
 
@@ -155,6 +7,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
     background-color: #cc6969;
 }
 
@@ -182,7 +35,7 @@ main{
     background-color: #682e2e;
     width: 200px;
     height: 200px;
-    object-fit: cover; /* Para que la imagen cubra el espacio sin deformarse */
+    object-fit:fill;  /* Para que la imagen cubra el espacio sin deformarse */
     display: flex;
     justify-content: center;
 }
@@ -214,6 +67,23 @@ main{
     background-color: rgb(175, 6, 0);
     
 }
+.btncarito{
+    background-color: #f86e6e;
+    padding: 6px;
+    margin: 7px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease;
+
+}
+.btncarito:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    background-color: #a84b4b;
+
+}
+
 #resta:hover /*cambiar tamaño de color resta*/
 {
     transform: scale(1.05);
@@ -229,7 +99,6 @@ main{
 
     .producto{
         padding: 0px;
-        width:auto;
         margin: 10px;
         border: 2px solid rgb(255, 255, 255);
         color: white;
@@ -242,10 +111,9 @@ main{
     .imgproducto{
         padding: 10px;
         background-color: #682e2e;
-        width: 120px;
-        height: 120px;
-        object-fit: cover; /* Para que la imagen cubra el espacio sin deformarse */
+        object-fit:fill; /* Para que la imagen cubra el espacio sin deformarse */
         display: flex;
         justify-content: center;
     }
+
 }

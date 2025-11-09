@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_carrito.css'>
+    <script src='main.js'></script>
+    <script src="js/mostrarCarrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!--NAV PARA PC-->
+    <nav class="navDesk">
+        
+        <div class="login"> <!--Contiene el login/logout-->
+            <img class="loginImg" src="img/login1.png" alt="login">
+        </div>
+        
+        <div class="links"> <!--Contiene los links para anvegar en la page-->
+            <a class="linksStyle" href="index.html">Pricipal</a>
+            <a class="linksStyle" href="tienda.html">Catálogo</a>
+            <a class="linksStyle" href="#">Mis Pedidos</a>
+            <a class="linksStyle" href="#">Contacto</a>
+        </div>
+        
+        <div class="bag"> <!--Contiene el button para ir a la bolsa-->
+            <img class="bagImg" src="img/BLACK_BAG.png" alt="bag">
+        </div>
+
+    </nav>
+
+    <!--NAV PARA MOVIL-->
+    <nav class="navMovile">
+
+        <!--Contiene el login/logout-->
+         <div class="login">
+            <img class="loginImg" src="img/login1.png" alt="login">
+        </div>
+
+        <!--Contiene el select de enlaces-->
+        <div class="linksContainer">
+            <select class="link">
+                <option><a href="index.html">Principal</a></option>
+                <option><a href="tienda.html">Catálogo</a></option>
+                <option><a href="#">Mis Pedidos</a></option>
+                <option><a href="#">Contacto</a></option>
+            </select>
+        </div>
+
+        <!--Contiene la bag-->
+        <!-- <div class="bagDiv"> -->
+            <a class="linkBag" href="carrito.html"><img class="bagImgMovile" src="./img/BLACK_BAG.png"></a>
+        <!-- </div> -->
+    </nav>
+    <!--MAIN-->
+    <main>
+        <section class="carrito">
+            <article id="listaProductos">
+                <ul id="ulli"></ul>
+            </article>
+                <div class="total">
+                    <h2 id="total"></h2>
+                </div>
+            <article>
+            
+                <button class="comprar" onclick="comprar()">Comprar</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/Strips.js"></script>
+
+    <!--FOOTER-->
+    <footer>
+        <p class="footerText">©Super T Martínez - Abarrotes con sabor a barrio</p>
+    </footer>
+
+</body>
+</html>

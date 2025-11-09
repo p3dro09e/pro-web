@@ -5,22 +5,24 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='style_tienda.css'>
     <script src='main.js'></script>
+    <script src="js/agregar_carrito.js"></script>
 </head>
 <body>
 
-    <!--NAV-->
-    <nav>
+    <!--NAV PARA PC-->
+    <nav class="navDesk">
         
         <div class="login"> <!--Contiene el login/logout-->
             <img class="loginImg" src="img/login1.png" alt="login">
         </div>
         
         <div class="links"> <!--Contiene los links para anvegar en la page-->
-            <a class="linksStyle" href="#">Pricipal</a>
-            <a class="linksStyle" href="#">Catálogo</a>
-            <a class="linksStyle" href="#">Mis pedidos</a>
+            <a class="linksStyle" href="index.html">Pricipal</a>
+            <a class="linksStyle" href="tienda.html">Catálogo</a>
+            <a class="linksStyle" href="carrito.html">Mis Pedidos</a>
             <a class="linksStyle" href="#">Contacto</a>
         </div>
         
@@ -29,7 +31,30 @@
         </div>
 
     </nav>
-    
+
+    <!--NAV PARA MOVIL-->
+    <nav class="navMovile">
+
+        <!--Contiene el login/logout-->
+         <div class="login">
+            <img class="loginImg" src="img/login1.png" alt="login">
+        </div>
+
+        <!--Contiene el select de enlaces-->
+        <div class="linksContainer">
+            <select class="link">
+                <option><a href="index.html">Principal</a></option>
+                <option><a href="tienda.html">Catálogo</a></option>
+                <option><a href="carrito.html">Mis Pedidos</a></option>
+                <option><a href="#">Contacto</a></option>
+            </select>
+        </div>
+
+        <!--Contiene la bag-->
+        <!-- <div class="bagDiv"> -->
+            <a class="linkBag" href="carrito.html"><img class="bagImgMovile" src="./img/BLACK_BAG.png"></a>
+        <!-- </div> -->
+    </nav>
     <!--MAIN-->
     <main>
     <section class="tienda">
@@ -39,9 +64,10 @@
             <h3>Doritos</h3>
             <div class="especificacion">
                 <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
-                <h3>$<span class="num">5</span></h3>
+                <h3>$<span class="num">25</span></h3>
                 <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
             </div>
+            <button class="btncarito" onclick="guardar(event)">Agregar al carrito</button>
         </article>
 
         <article class="producto">
@@ -50,31 +76,35 @@
             <h3>Doritos</h3>
             <div class="especificacion">
                 <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
-                <h3>$<span class="num">5</span></h3>
+                <h3>$<span class="num">30</span></h3>
                 <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
             </div>
+            <button class="btncarito" onclick="guardar(event)">Agregar al carrito</button>
+
         </article>
 
         <article class="producto">
             <img class="imgproducto" src="img/productos/dinamita.jpg" alt="">
 
-            <h3>Doritos</h3>
+            <h3 id="nombre">Doritos dinamitas</h3>
             <div class="especificacion">
                 <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
-                <h3>$<span class="num">5</span></h3>
+                <h3>$<span class="num">29</span></h3>
                 <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
             </div>
+            <button class="btncarito" onclick="guardar(event)">Agregar al carrito</button>
         </article>
 
         <article class="producto">
             <img class="imgproducto" src="img/productos/pesi.webp" alt="">
 
-            <h3>Doritos</h3>
+            <h3>pepsi</h3>
             <div class="especificacion">
                 <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
-                <h3>$<span class="num">5</span></h3>
+                <h3>$<span class="num">15</span></h3>
                 <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
             </div>
+            <button class="btncarito" onclick="guardar(event)">Agregar al carrito</button>
         </article>
 
         <article class="producto">
@@ -83,9 +113,10 @@
             <h3>Doritos</h3>
             <div class="especificacion">
                 <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
-                <h3>$<span class="num">5</span></h3>
+                <h3>$<span class="num">20</span></h3>
                 <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
             </div>
+            <button class="btncarito" onclick="guardar(event)">Agregar al carrito</button>
         </article>
 
         <article class="producto">
@@ -94,9 +125,10 @@
             <h3>Doritos</h3>
             <div class="especificacion">
                 <button class="boton resta" id="resta" onclick="disminuir(event)">-</button>
-                <h3>$<span class="num">5</span></h3>
+                <h3>$<span class="num">10</span></h3>
                 <button class="boton suma" id="suma" onclick="aumenta(event)">+</button>
             </div>
+            <button class="btncarito" onclick="guardar(event)">Agregar al carrito</button>
         </article>
     </section>
     </main>
